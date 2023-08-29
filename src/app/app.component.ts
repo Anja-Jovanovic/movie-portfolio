@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'world-of-cinephilia-web';
+
+  globalLanguage = "english";
+
+
+
+
+  // constructor(private translateService: TranslateService) {
+  //   translate.setDefaultLang('en');
+  //
+  // }
+  changeLanguage(event: string): void {
+
+    this.globalLanguage = event;
+  }
 }
