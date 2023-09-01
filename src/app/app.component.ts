@@ -10,13 +10,6 @@ export class AppComponent {
 
   globalLanguage = "english";
 
-
-
-
-  // constructor(private translateService: TranslateService) {
-  //   translate.setDefaultLang('en');
-  //
-  // }
   changeLanguage(event: string): void {
 
     this.globalLanguage = event;

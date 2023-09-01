@@ -3,5 +3,9 @@
   "language.french": "French",
 
   "navbar.movies": "Movies",
-  "navbar.series": "TV Shows"
+  "navbar.series": "TV Shows",
+
+  "home.heading": "Your adventure starts here",
+  "home.small-heading": "May the force be with you."
+
 }
