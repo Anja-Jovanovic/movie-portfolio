@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'world-of-cinephilia-web';
 
-  globalLanguage = "english";
+  globalLanguage = "en";
 
   changeLanguage(event: string): void {
 

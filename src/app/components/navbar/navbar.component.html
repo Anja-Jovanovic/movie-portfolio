@@ -1,39 +1,43 @@
 <div class="w-100">
 
-<nav class="navbar navbar-expand-lg  navbar-light d-flex" style="background-color: #0a609c;">
-  <div class="w-100 p-0 d-flex justify-content-center d-flex">
-    <div class="row w-100">
+<nav class="navbar navbar-light w-100 p-0" style="background-color: #435464;">
+  <div class="w-100 p-0 justify-content-center d-flex" >
+    <div class="d-flex w-100 anja">
 
-      <div class="col-6 pt-2 text-start align-items-center d-flex">
+      <div class="navbar-left text-start align-items-center d-flex">
 
         <div class="col-auto align-items-center pe-3" >
-<!--          <img src="/../../../assets/images/slika.png" alt="logo" class="logo" height="108" width="90"/><strong style="color: #3a2a5c">orld of</strong>-->
-<!--          <img src="/../../../assets/images/slika2.png" alt="logo" class="logo" height="80" width="70"/><strong style="color: #3a2a5c">inephilia</strong>-->
-          <img src="/../../../assets/images/logo.png" alt="logo" class="logo" height="100" width= "190"/><strong class="text-light"></strong>
+          <img src="/../../../assets/images/logo2-transparent.png" alt="logo" width="140" height="80"/>
 
         </div>
 
-        <div class="col-auto ps-3 pe-3">
-          <h5 class="pointer menu-item text-light" >{{ 'navbar.movies' | translate }}</h5>
+        <div class="col-auto ps-3 pe-3 mt-2 navbar-movies">
+          <h5 class="pointer menu-item text-light" style="font-family: 'Courier New'" >{{ 'navbar.movies' | translate }}</h5>
         </div>
 
-        <div class="col-auto ps-3 pe-3">
-          <h5 class="pointer menu-item text-light">{{ 'navbar.series' | translate }}</h5>
+        <div class="col-auto ps-3 pe-3 mt-2 navbar-series">
+          <h5 class="pointer menu-item text-light" style="font-family: 'Courier New'">{{ 'navbar.series' | translate }}</h5>
         </div>
 
       </div>
 
 
-  <div class="col-6 d-flex pe-0 flex-row justify-content-end align-items-center pe-4 	d-none d-lg-flex">
+  <div class="d-flex align-items-center  navbar-right">
 
-      <div class="col-auto ps-3 pe-3">
+    <div class="col-auto ms-3">
+    <input type="text" id="search" [ngModel]="searchText" (ngModelChange)="searchKey($event)" placeholder="&#xF002; Search"
+           style="font-family: FontAwesome; background-color:#435464;" class="border border-light text-white">
+    </div>
+
+    <div class="info-and-language d-flex ms-5 align-items-center ">
+      <div class="col-auto">
         <h5 class="pointer menu-item text-light"><i class="fa fa-question" aria-hidden="true"></i></h5>
       </div>
 
-      <div class="col-auto ps-3 pe-3">
-          <button class=" btn btn-outline-light" (click)="selectLanguage()"> {{ 'language.' + selectedLanguage | translate }}</button>
+      <div class="col-auto ms-5 me-3">
+          <button class=" btn btn-outline-light" style="font-family: 'Courier New';" (click)="selectLanguage()"> {{ 'language.' + selectedLanguage | translate }}</button>
       </div>
-
+  </div>
   </div>
     </div>
   </div>
